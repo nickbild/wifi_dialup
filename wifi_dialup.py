@@ -17,7 +17,7 @@ def packet_callback(packet):
 
     raw_bytes = bytes(packet)
     for b in raw_bytes:
-        print(b)
+        # print(b)
         # Send the byte to the sound generator.
         ser.write(bytes([b]))
         time.sleep(0.0001)
