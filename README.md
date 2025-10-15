@@ -31,6 +31,8 @@ Wi-Fi connections don't do this dial-up handshake, so to make the Wi-Fi sound mo
 - 1 x Raspberry Pi 3 B+
 - 1 x Adafruit QT Py
 - 1 x Adafruit Mono 2.5W Class D Audio Amplifier
+- 1 x USB Wi-Fi adapter
+- 1 x 8 ohm, 2 watt speaker
 
 ## About the Author
 
