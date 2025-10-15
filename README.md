@@ -23,3 +23,13 @@ I then send the data from the captured packets to this Adafruit QT Py microcontr
 Now, the data is pretty much random, so as you might expect, it sounds basically like static. That’s actually also true of dial-up modems. But wait, what about the connection sounds we all know and love you ask? Those are special because during the initial handshake, the transfer rate is slowed down and specific steps are always taken. But when real data is transferred, and the speaker turns off, it’s all static.
 
 Wi-Fi connections don't do this dial-up handshake, so to make the Wi-Fi sound more interesting, I make some occasional random adjustments to the amplitude and frequency of the sound wave the device produces, but it is all driven by the Wi-Fi data.
+
+## Bill of Materials
+
+- 1 x Raspberry Pi 3 B+
+- 1 x Adafruit QT Py
+- 1 x Adafruit Mono 2.5W Class D Audio Amplifier
+
+## About the Author
+
+[Nick A. Bild, MS](https://nickbild79.firebaseapp.com/#!/)
