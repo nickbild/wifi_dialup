@@ -16,7 +16,7 @@ Modems convert digital data into analog signals compatible with the existing tel
 
 ## How It Works
 
-I wanted to bring the experience of hearing an internet connection into the modern age. I’m using this Raspberry Pi 3 to make that possible. It has a secondary USB Wi-Fi adapter that I use to sniff network traffic. I put the adapter into a mode that receives all traffic, then I filter it to target one particular computer (by followng [these steps](https://github.com/nickbild/wifi_dialup/blob/main/monitor.sh)), so that I can focus on its traffic.
+I wanted to bring the experience of hearing an internet connection into the modern age. I’m using a Raspberry Pi 3 to make that possible. It has a secondary USB Wi-Fi adapter that I use to sniff network traffic. I put the adapter into a mode that receives all traffic, then I filter it to target one particular computer (by followng [these steps](https://github.com/nickbild/wifi_dialup/blob/main/monitor.sh)), so that I can focus on its traffic.
 
 I then send the data from the captured packets to this Adafruit QT Py microcontroller via a serial connection. A [Python script](https://github.com/nickbild/wifi_dialup/blob/main/wifi_dialup.py) automates capturing packets and forwarding them to the microcontroller. The microcontroller then turns the received data value into an amplitude that I use to generate a sound wave. This is converted into an analog signal with the onboard digital-to-analog converter, and the output is fed into an audio amplifier that plays the sound through a speaker.
 
