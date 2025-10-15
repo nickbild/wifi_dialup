@@ -20,7 +20,7 @@ I wanted to bring the experience of hearing an internet connection into the mode
 
 I then send the data from the captured packets to an Adafruit QT Py microcontroller via a serial connection. A [Python script](https://github.com/nickbild/wifi_dialup/blob/main/wifi_dialup.py) automates capturing packets and forwarding them to the microcontroller. The microcontroller then turns the received data value into an amplitude that I use to generate a sound wave. This is converted into an analog signal with the onboard digital-to-analog converter, and the output is fed into an audio amplifier that plays the sound through a speaker.
 
-Now, the data is pretty much random, so as you might expect, it sounds basically like static. That’s actually also true of dial-up modems. But wait, what about the connection sounds we all know and love you ask? Those are special because during the initial handshake, the transfer rate is slowed down and specific steps are always taken. But when real data is transferred, and the speaker turns off, it’s all static.
+Now, the data is pretty much random, so as you might expect, it sounds basically like static. That’s actually also true of dial-up modems. But wait, what about the connection sounds we all know and love, you ask? Those are special because during the initial handshake, the transfer rate is slowed down and specific steps are always taken. But when real data is transferred, and the speaker turns off, it’s all static.
 
 Wi-Fi connections don't do this dial-up handshake, so to make the Wi-Fi sound more interesting, I make some occasional random adjustments to the amplitude and frequency of the sound wave the device produces, but it is all driven by the Wi-Fi data.
 
